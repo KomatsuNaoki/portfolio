@@ -1,15 +1,14 @@
 <template>
 <div id="app">
     <v-app>
+        <v-layout class="header">
+            <v-flex xs12>
+                <h1>KOMATSUBARA TATSUYA</h1>
+            </v-flex>
+        </v-layout>
 
         <section class="lo">
             <v-container>
-                <v-layout class="header">
-                    <v-flex xs12>
-                        <h1>KOMATSUBARA TATSUYA</h1>
-                    </v-flex>
-                </v-layout>
-
                 <v-layout class="body">
                     <v-flex>
                         <router-view />
@@ -37,12 +36,13 @@ export default {
 </script-->
 
 <style>
+/*
 .lo {
     display: grid;
     grid:
         "header header header"auto "leftSide body rightSide"1fr "footer footer footer"auto / auto 1fr auto;
     gap: 8px;
-}
+}*/
 
 .container {
     max-width: 100%;
@@ -50,6 +50,9 @@ export default {
 
 .header {
     grid-area: header;
+    position: absolute;          /* 位置指定 */
+    top: 10px;                    /* 親要素の半分下にずらす */
+    left: 10px;                   /* 親要素の半分右にずらす */
 }
 
 #app {
@@ -58,6 +61,13 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
+}
+
+.lo{
+    position: absolute;          /* 位置指定 */
+    top: 50%;                    /* 親要素の半分下にずらす */
+    left: 50%;                   /* 親要素の半分右にずらす */
+    transform: translateY(-50%) translateX(-50%);    /* 要素自体の半分、上と左にずらす */
 }
 
 #app h1 {

@@ -1,5 +1,5 @@
 <template>
-  <p>プロフィール画面だよ</p>
+  <p>コンタクトじゃ</p>
 </template>
 
 <script>
