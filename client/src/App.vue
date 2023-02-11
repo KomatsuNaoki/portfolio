@@ -3,19 +3,13 @@
     <v-app>
         <v-layout class="header">
             <v-flex xs12>
-                <h1>KOMATSUBARA TATSUYA</h1>
+                <h1  @click="goHome()">KOMATSUBARA TATSUYA</h1>
             </v-flex>
         </v-layout>
 
         <section class="lo">
             <v-container>
-                <v-layout class="body">
-                    <v-flex>
-                        <router-view />
-                    </v-flex>
-
-                </v-layout>
-
+                    <router-view />
             </v-container>
         </section>
         <footer>
@@ -25,15 +19,17 @@
 </div>
 </template>
 
-<!--script>
+<script>
 export default {
-    name: 'App',
-
-    data: () => ({
-        //
-    })
+  name: 'HelloWorld',
+  methods: {
+    goHome () {
+      console.log('hello')
+      this.$router.push('/')
+    }
+  }
 }
-</script-->
+</script>
 
 <style>
 /*
@@ -46,13 +42,19 @@ export default {
 
 .container {
     max-width: 100%;
+    height: 100%;
 }
 
 .header {
+    background-color: rgba(255,255,255,0.5);
+    width: 100%;
+    height: 30px;
     grid-area: header;
     position: absolute;          /* 位置指定 */
-    top: 10px;                    /* 親要素の半分下にずらす */
-    left: 10px;                   /* 親要素の半分右にずらす */
+}
+
+.app{
+    display: block;
 }
 
 #app {
@@ -60,10 +62,16 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #2c3e50;
+    background: url("~@/assets/home.png") center center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-attachment: fixed;
+    overflow: hidden;
 }
 
 .lo{
+    width: 100%;
+    height: calc(100% - 60px);
     position: absolute;          /* 位置指定 */
     top: 50%;                    /* 親要素の半分下にずらす */
     left: 50%;                   /* 親要素の半分右にずらす */
@@ -71,6 +79,9 @@ export default {
 }
 
 #app h1 {
+    position: static;
+    top: 10px;                    /* 親要素の半分下にずらす */
+    left: 10px;                   /* 親要素の半分右にずらす */
     text-align: left;
     color: #fff;
     font-family: Inter, Impact, Arial, sans-serif;
@@ -92,10 +103,12 @@ export default {
 footer {
     position: fixed;
     width: 100%;
+    height: 30px;
     bottom: 0;
 }
 
 footer p {
+    color: #2c3e50;
     font-family: Impact, Arial, sans-serif;
     font-weight: bold;
 }
@@ -112,4 +125,12 @@ nav a {
 nav a.router-link-exact-active {
     color: #42b983;
 }
+
+.content{
+    position: absolute;          /* 位置指定 */
+    top: 50%;                    /* 親要素の半分下にずらす */
+    left: 50%;                   /* 親要素の半分右にずらす */
+    transform: translateY(-50%) translateX(-50%);    /* 要素自体の半分、上と左にずらす */
+}
+
 </style>

@@ -1,56 +1,51 @@
 <template>
-  <v-container>
-    <v-row class="text-center">
-      <!--v-col cols="12">
-        <v-img
-          :src="require('../assets/logo.svg')"
-          class="my-3"
-          contain
-          height="200"
-        />
-      </v-col-->
+  <div class="content">
+    <v-container>
+      <v-row class="text-center">
 
-      <v-col class="mb-4">
-        <h2 class="display-2 font-weight-bold mb-3">
-          KOMATSUBARA TATSUYA
-        </h2>
+        <v-col class="mb-4">
+          <h2 class="display-2 font-weight-bold mb-3">
+            KOMATSUBARA TATSUYA
+          </h2>
 
-        <p class="subheading font-weight-regular">
-          Researchs and Images
-        </p>
-      </v-col>
+          <p class="subheading font-weight-regular">
+            Researchs / Images
+          </p>
+        </v-col>
 
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
+        <v-col
+          class="mb-5"
+          cols="12"
+        >
 
-        <v-row justify="center">
-          <v-btn @click="goProfile()">Profile</v-btn>
-        </v-row>
-      </v-col>
+          <v-row justify="center">
+            <v-btn @click="goProfile()">Profile</v-btn>
+          </v-row>
+        </v-col>
 
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
+        <v-col
+          class="mb-5"
+          cols="12"
+        >
 
-        <v-row justify="center">
-          <v-btn @click="goWorks()">Works</v-btn>
-        </v-row>
-      </v-col>
+          <v-row justify="center">
+            <v-btn @click="goWorks()">Works</v-btn>
+          </v-row>
+        </v-col>
 
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
+        <v-col
+          class="mb-5"
+          cols="12"
+        >
 
-        <v-row justify="center">
-          <v-btn @click="goContact()">Contact</v-btn>
-        </v-row>
-      </v-col>
-    </v-row>
-  </v-container>
+          <v-row justify="center">
+            <v-btn @click="goContact()">Contact</v-btn>
+          </v-row>
+        </v-col>
+      </v-row>
+    </v-container>
+  </div>
+
 </template>
 
 <script>
