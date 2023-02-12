@@ -16,7 +16,7 @@ export default {
 
 <style>
 h3 {
-    position: absolute;
+    position: fixed;
     right: 10px;
     bottom: 0;
 }

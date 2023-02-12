@@ -1,16 +1,16 @@
 <template>
+  <div class="home">
   <div class="content">
-    <v-container>
-      <v-row class="text-center">
+      <!--v-row class="text-center"-->
 
-        <v-col class="mb-4">
-          <h2 class="display-2 font-weight-bold mb-3">
+        <v-col class="mb-1">
+          <h2 class="display-2 font-weight-bold mb-1">
             KOMATSUBARA TATSUYA
           </h2>
 
-          <p class="subheading font-weight-regular">
+          <!--p class="subheading font-weight-regular">
             Researchs / Images
-          </p>
+          </p-->
         </v-col>
 
         <v-col
@@ -42,26 +42,28 @@
             <v-btn @click="goContact()">Contact</v-btn>
           </v-row>
         </v-col>
-      </v-row>
-    </v-container>
+      <!--/v-row-->
   </div>
+</div>
 
 </template>
 
 <script>
 export default {
   name: 'HelloWorld',
+  data () {
+    return {
+      page: 'Home'
+    }
+  },
   methods: {
     goProfile () {
-      console.log('hello')
       this.$router.push('/profile')
     },
     goWorks () {
-      console.log('hello')
       this.$router.push('/works')
     },
     goContact () {
-      console.log('hello')
       this.$router.push('/contact')
     }
   }

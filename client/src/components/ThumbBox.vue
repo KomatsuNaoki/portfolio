@@ -1,32 +1,33 @@
 <template>
-    <div class="about">
+    <div class="box">
         <a>
             {{ title }}
         </a>
-        <div class="textbox">
-            <h4>
-                {{ text }}
-            </h4>
+        <div class="thumb">
+            <a :href="link">
+            <img v-bind:src="thumbPhoto" :href="link"/>
+        </a>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-  name: 'AboutBox',
-  props: ['title', 'text']
+  name: 'ThumbBox',
+  props: ['title', 'thumbPhoto', 'link']
 }
+
 </script>
 
 <style>
 
-.about {
+.box {
     padding: 15px;
     max-width: 400px;
     width: 100%;
 }
 
-.about a{
+.box a{
     color: black;
     text-align: center;
     font-size: large;
