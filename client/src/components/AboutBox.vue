@@ -1,8 +1,8 @@
 <template>
     <div class="about">
-        <a>
+        <h7>
             {{ title }}
-        </a>
+        </h7>
         <div class="textbox">
             <h4>
                 {{ text }}
@@ -26,18 +26,23 @@ export default {
     width: 100%;
 }
 
-.about a{
-    color: black;
+.about h7{
+    padding: 5px;
+    font-family: Noto Sans JP;
+    font-weight: bold;
+    background-color: #394f6a;
+    color: #ddd;
     text-align: center;
     font-size: large;
 }
 
 .textbox{
-    background-color: rgba(255,255,255,0.5);
-    padding: 5px;
+    background-color: rgba(255,255,255,0.7);
+    margin: 5px;
 }
 
 .textbox h4{
+    color: #394f6a;
     text-align: center;
     font-size: larger;
     white-space: pre-wrap;

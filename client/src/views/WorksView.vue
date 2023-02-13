@@ -24,7 +24,7 @@ export default {
   data () {
     return {
       title: ['研究', '趣味'],
-      thumbnail: ['/img/researchThumbnail.f8c79509.jpg', '/img/photoThumbnail.cfa3de92.jpg'],
+      thumbnail: ['researchThumbnail', 'photoThumbnail'],
       link: ['https://dl.nkmr-lab.org/?q=%E5%B0%8F%E6%9D%BE%E5%8E%9F%20%E9%81%94%E5%93%89', 'https://www.instagram.com/kmtn_1016/']
     }
   }
@@ -50,7 +50,7 @@ export default {
     /*padding: 1px;*/
 }
 
-.content .row{
+.works .content .row{
   margin: 1px;
 }
 

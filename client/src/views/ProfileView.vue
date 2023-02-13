@@ -32,8 +32,8 @@ export default {
       text: ['小松原 達哉\nKomatsubara Tatsuya',
         '明治大学大学院　先端数理科学研究科\n先端メディアサイエンス専攻 1年\n中村研究室',
         '2022年 3月\n明治大学 総合数理学部\n先端メディアサイエンス学科 卒業',
-        '写真撮影 音楽鑑賞\n3Dモデリング ゲーム',
-        'Processing Javascript\nBlender(趣味レベル) 画像加工ソフト']
+        '写真撮影 音楽鑑賞\nゲーム 3Dモデリング',
+        'Processing Javascript\nBlender 画像加工ソフト']
     }
   }
 }
@@ -58,10 +58,12 @@ export default {
     padding: 1px;
 }
 
-img {
+.profile .content img {
+    border-radius: 20px;
     width:70%;
     max-width: 200px;
-    margin:"10px"
+    margin:"10px";
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .7);
 }
 
 </style>

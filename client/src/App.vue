@@ -13,7 +13,7 @@
             <router-view />
         </section>
         <footer>
-            <a>&copy; 2022 Komatsubara Tatsuya</a>
+            <h8>&copy; 2023 Komatsubara Tatsuya</h8>
         </footer>
     </v-container>
     </v-app>
@@ -32,6 +32,9 @@ export default {
     goHome () {
       this.$router.push('/')
     }
+  },
+  created: function () {
+    document.documentElement.setAttribute('lang', 'ja')
   }
 }
 </script>
@@ -74,13 +77,15 @@ p {
 }
 
 #app {
+    background-color: #000;
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     background: url("~@/assets/home.png") center center;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+    /*background-size: auto 100%;*/
     background-position: center center;
     background-attachment: fixed;
 }
@@ -105,7 +110,7 @@ p {
     font-weight: bold;
     font-size: 20px;
     -webkit-text-stroke: 0.5px black;
-    text-shadow: 2px 2px 3px #76FF03;
+    text-shadow: 2px 2px 3px #00a375;
     float: left;
 }
 
@@ -115,19 +120,21 @@ p {
     font-weight: bold;
     font-size: 20px;
     -webkit-text-stroke: 0.5px black;
-    text-shadow: 2px 2px 3px #76FF03;
+    text-shadow: 2px 2px 3px #00a375;
 }
 
 footer {
     width: 100%;
     height: 50px;
     bottom: 0;
-    text-align: center;
+    left: 0;
     position: fixed;
+    background-color: #5d6b83;
 }
 
-footer a {
-    color: #2c3e50;
+footer h8 {
+    text-align: center;
+    color: #ddd;
     font-family: Impact, Arial, sans-serif;
     font-weight: bold;
 }
