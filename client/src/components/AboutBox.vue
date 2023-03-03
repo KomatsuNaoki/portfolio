@@ -1,8 +1,8 @@
 <template>
     <div class="about">
-        <h7>
+        <h3>
             {{ title }}
-        </h7>
+        </h3>
         <div class="textbox">
             <h4>
                 {{ text }}
@@ -26,7 +26,8 @@ export default {
     width: 100%;
 }
 
-.about h7{
+.about h3{
+    width: auto;
     padding: 5px;
     font-family: Noto Sans JP;
     font-weight: bold;

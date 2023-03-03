@@ -1,8 +1,8 @@
 <template>
     <div class="box">
-        <h9>
-            {{ title }}
-        </h9>
+      <h6>
+        {{ title }}
+      </h6>
         <div class="thumb">
             <a :href="link">
             <img :src="imgSrc">
@@ -42,7 +42,7 @@ export default {
     width: 100%;
 }
 
-.box h9{
+.box h6{
     padding: 5px;
     font-family: Noto Sans JP;
     font-weight: bold;

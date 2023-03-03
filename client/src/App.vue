@@ -13,7 +13,7 @@
             <router-view />
         </section>
         <footer>
-            <h8>&copy; 2023 Komatsubara Tatsuya</h8>
+            &copy; 2023 Komatsubara Tatsuya
         </footer>
     </v-container>
     </v-app>
@@ -106,7 +106,7 @@ p {
     left: 10px;                   /* 親要素の半分右にずらす */
     text-align: left;
     color: #fff;
-    font-family: Inter, Impact, Arial, sans-serif;
+    font-family: Inter, Impact, Noto Sans JP, Arial, sans-serif;
     font-weight: bold;
     font-size: 20px;
     -webkit-text-stroke: 0.5px black;
@@ -130,9 +130,6 @@ footer {
     left: 0;
     position: fixed;
     background-color: #5d6b83;
-}
-
-footer h8 {
     text-align: center;
     color: #ddd;
     font-family: Impact, Arial, sans-serif;

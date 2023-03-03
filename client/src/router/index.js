@@ -9,7 +9,7 @@ const routes = [
     path: '/',
     name: 'home',
     component: Home,
-    meta: { title: 'ページタイトル', desc: 'ディスクリプションを記述' }
+    meta: { title: 'KMTBR HomePage' }
   },
   {
     path: '/profile',
